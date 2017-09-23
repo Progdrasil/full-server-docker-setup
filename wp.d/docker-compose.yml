@@ -35,7 +35,7 @@ services:
             - ./home/db:/home/db
 
     wp:
-        image: pattonwebz/docker-wpcli
+        image: wordpress:cli-php7.1
         volumes_from:
             - wordpress
         links:
